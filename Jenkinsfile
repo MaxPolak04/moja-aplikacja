@@ -11,7 +11,7 @@ choices: ['dev', 'staging', 'prod'],
 description: 'Srodowisko docelowe'
 )
 } // test
-stages {
+stages {// test
 stage('Info') {
 steps {
 echo "${env.APLIKACJA} v${env.WERSJA}"
