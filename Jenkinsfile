@@ -13,7 +13,7 @@ description: 'Srodowisko docelowe'
 } // test
 stages {// test
 stage('Info') {// test
-steps {
+steps {// test
 echo "${env.APLIKACJA} v${env.WERSJA}"
 echo "Build: ${env.BUILD_NUMBER}"
 echo "Deploy na: ${params.SRODOWISKO}"
