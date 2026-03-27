@@ -31,3 +31,4 @@ failure {
 echo 'BLAD! Sprawdz logi.'
 }
 }
+}
