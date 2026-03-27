@@ -1,9 +1,18 @@
 pipeline {
 agent any
+environment {
+APLIKACJA = 'Kalkulator'
+WERSJA = '1.1.0'
+}
 stages {
+stage('Info') {
+steps {
+echo "${env.APLIKACJA} v${env.WERSJA}"
+echo "Build: ${env.BUILD_NUMBER}"
+}
+}
 stage('Przygotowanie') {
 steps {
-echo 'Sprawdzam srodowisko...'
 sh 'python3 --version'
 }
 }
@@ -20,10 +29,10 @@ sh 'python3 app.py'
 }
 post {
 success {
-echo 'Pipeline OK'
+echo "${env.APLIKACJA} v${env.WERSJA} - SUKCES"
 }
 failure {
-echo 'Pipeline NIEUDANY'
+echo "${env.APLIKACJA} - BLAD!"
 }
 }
 }
