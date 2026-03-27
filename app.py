@@ -10,6 +10,8 @@ def podziel(a, b):
         return "Blad: dzielenie przez zero"
     return a / b
 
+a = 4
+
 if __name__ == "__main__":
     print(dodaj(2, 3))
     print(podziel(10, 2))
