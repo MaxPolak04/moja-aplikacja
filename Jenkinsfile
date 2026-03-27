@@ -15,7 +15,7 @@ stages {// test
 stage('Info') {// test
 steps {// test
 echo "${env.APLIKACJA} v${env.WERSJA}"// test
-echo "Build: ${env.BUILD_NUMBER}"
+echo "Build: ${env.BUILD_NUMBER}"// test
 echo "Deploy na: ${params.SRODOWISKO}"
 }
 }
