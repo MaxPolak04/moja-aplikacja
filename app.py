@@ -13,3 +13,4 @@ if __name__ == "__main__":
     print(f"3 * 7 = {pomnoz(3, 7)}")
 # Automatyczny trigger
 # Automatyczny trigger
+# webhook test
