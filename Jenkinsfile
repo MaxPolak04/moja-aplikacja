@@ -10,7 +10,7 @@ name: 'SRODOWISKO',
 choices: ['dev', 'staging', 'prod'],
 description: 'Srodowisko docelowe'
 )
-}
+} // test
 stages {
 stage('Info') {
 steps {
